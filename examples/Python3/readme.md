@@ -12,6 +12,7 @@ API 列表
 舵机<br>
 ----
 Servo(port,slot)
+----
          创建舵机对象。
          参数：
          • port: MegaPiPro.PORT5 ~ MegaPiPro.PORT8
@@ -33,6 +34,7 @@ Servo(port,slot)
 直流电机
 ----
 DCMotor(port,slot)
+----
         创建直流电机对象。
         参数：
         • port: MegaPiPro.PORT1 ~ MegaPiPro.PORT4
@@ -58,6 +60,7 @@ DCMotor(port,slot)
 直流编码电机
 ----
 EncoderMotor(port)
+----
         创建直流编码电机对象。
         参数：
         • port: MegaPiPro.PORT1 ~ MegaPiPro.PORT4
