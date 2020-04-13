@@ -3,33 +3,33 @@ MegaPi Pro主控板Python接口<br>
 准备工作  
 ----
         第1步：安装最新的makeblock库，"pip3 install makeblock --upgrade"  
-                第2步：使用 usb 数据线，连接光环板到电脑设备。  
-                第3步： 将如下代码复制到代码编辑中，点击运行  
-                from makeblock import MegaPiPro  
-                board = MegaPiPro.create()  
+        第2步：使用 usb 数据线，连接光环板到电脑设备。  
+        第3步： 将如下代码复制到代码编辑中，点击运行  
+        from makeblock import MegaPiPro  
+        board = MegaPiPro.create()  
 API 列表  
 ----
 舵机<br>
 ----
-                Servo(port,slot)<br>
-                创建舵机对象。<br>
-                参数：<br>
-                • port: MegaPiPro.PORT5 ~ MegaPiPro.PORT8<br>
-                • slot: MegaPiPro.SLOT1 ~ MegaPiPro.SLOT2<br>
-                set_angle(angle)<br>
-                设置舵机旋转角度<br>
-                参数：<br>
-                • angle:旋转角度，范围：0 ~ 180°<br>
-                程序示例<br>
-                from time import sleep<br>
-                from makeblock import MegaPiPro <br>
-                board = MegaPiPro.create()<br>
-                servo = board.Servo(MegaPiPro.PORT6,MegaPiPro.SLOT1)<br>
-                while True:<br>
+         Servo(port,slot)<br>
+         创建舵机对象。<br>
+         参数：<br>
+         • port: MegaPiPro.PORT5 ~ MegaPiPro.PORT8<br>
+         • slot: MegaPiPro.SLOT1 ~ MegaPiPro.SLOT2<br>
+         set_angle(angle)<br>
+         设置舵机旋转角度<br>
+         参数：<br>
+         • angle:旋转角度，范围：0 ~ 180°<br>
+         程序示例<br>
+         from time import sleep<br>
+         from makeblock import MegaPiPro <br>
+         board = MegaPiPro.create()<br>
+         servo = board.Servo(MegaPiPro.PORT6,MegaPiPro.SLOT1)<br>
+         while True:<br>
                 servo.set_angle(30)<br>
-                 sleep(1)<br>
-                 servo.set_angle(120)<br>
-                 sleep(1)<br>
+                sleep(1)<br>
+                servo.set_angle(120)<br>
+                sleep(1)<br>
 直流电机<br>
 ----
 DCMotor(port,slot)<br>
