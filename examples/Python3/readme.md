@@ -1,5 +1,6 @@
-#MegaPi Pro主控板Python接口
-准备工作
+MegaPi Pro主控板Python接口<br>
+====
+准备工作<br>
 ----
 第1步：安装最新的makeblock库，"pip3 install makeblock --upgrade"<br>
 第2步：使用 usb 数据线，连接光环板到电脑设备。<br>
