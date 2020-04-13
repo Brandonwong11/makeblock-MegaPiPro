@@ -1,12 +1,15 @@
-MegaPi Pro主控板Python接口
+#MegaPi Pro主控板Python接口
 准备工作
+----
 第1步：安装最新的makeblock库，"pip3 install makeblock --upgrade"
 第2步：使用 usb 数据线，连接光环板到电脑设备。
 第3步： 将如下代码复制到代码编辑中，点击运行
 from makeblock import MegaPiPro
 board = MegaPiPro.create()
 API 列表
+----
 舵机
+----
 Servo(port,slot)
 创建舵机对象。
 参数：
@@ -27,6 +30,7 @@ while True:
     servo.set_angle(120)
     sleep(1)
 直流电机
+----
 DCMotor(port,slot)
 创建直流电机对象。
 参数：
@@ -51,6 +55,7 @@ while True:
     motor.run(0)
     sleep(1)
 直流编码电机
+----
 EncoderMotor(port)
 创建直流编码电机对象。
 参数：
@@ -92,6 +97,7 @@ on_finished(position)
 set_home()
 设置当前位置为原点
 步进电机
+----
 StepperMotor(port)
 创建步进电机对象。
 参数：
@@ -133,6 +139,7 @@ on_finished(position)
 set_home()
 设置当前位置为原点
 智能舵机
+----
 SmartServo(port)
 创建智能舵机对象。
 参数：
@@ -208,6 +215,7 @@ while True:
     smartservo.set_led(1,0,0,50)
     sleep(0.5)
 无刷电机
+----
 BLDCMotor(port)
 创建无刷电机对象。
 参数：
