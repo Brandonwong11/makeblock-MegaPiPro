@@ -112,11 +112,12 @@ def on_finished(value):
 ````
 set_home()  
 设置当前位置为原点  
+
 步进电机
 ----
 StepperMotor(port)
 ----
-创建步进电机对象。  
+创建步进电机对象。    
 参数：  
 • port: MegaPiPro.PORT1 ~ MegaPiPro.PORT4  
 run(speed)  
@@ -159,6 +160,7 @@ def on_finished(value):
 ```
 set_home()  
 设置当前位置为原点  
+
 智能舵机
 ----
 SmartServo(port)
